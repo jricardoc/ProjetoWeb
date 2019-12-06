@@ -1,0 +1,79 @@
+body{ 
+    padding: 0;
+    background: #f8f8f8;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container .gridContainer { 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 600px;
+    align-self: center;
+    width: 100%;
+    border-radius: 20px;
+    margin: 60px;
+}
+
+.infoContainer{
+    display: flex;
+    background: #154188;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.infoContainer h1 {
+    font-size: 80px;
+    color: #C9D9EB;
+} 
+.signInContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dedede;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    flex-direction: column;
+}
+.signInContainer h1 {
+    margin: 0;
+}
+
+.signInContainer form  { 
+    display: flex;
+    flex-direction: column;
+}
+
+.signInContainer input { 
+    width: 300px;
+    margin: 6px 0px;
+    border: 0;
+    outline: none;
+    font-weight: bold;
+    padding: 16px 12px;
+    border-radius: 4px;
+    background: transparent;
+    border-bottom: solid thin #154188;
+    color: #154188;
+}
+
+.signInContainer input::placeholder{ 
+    color: #154188;
+}
+
+.signInContainer button{ 
+    margin-top: 20px;
+    background: #154188;
+    border: none;
+    padding: 12px;
+    border-radius: 2px;
+    color: #dedede;
+    font-weight: bold;
+}
